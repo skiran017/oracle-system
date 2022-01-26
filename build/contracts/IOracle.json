@@ -1,0 +1,426 @@
+{
+  "contractName": "IOracle",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getData",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "result",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "date",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "payload",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"key\",\"type\":\"bytes32\"}],\"name\":\"getData\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"result\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"date\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"payload\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IOracle.sol\":\"IOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IOracle.sol\":{\"keccak256\":\"0xe8d0720242b2a06ba6d19361a1af8736129c903f74e69488952f6d6c2b24deb7\",\"license\":\"unlicensed\",\"urls\":[\"bzz-raw://4a0b72e4aed5d3d5772204d02ca29d832491bc83ede322756b43d18dcd1aa9ef\",\"dweb:/ipfs/QmbhJy67U2ANYaRJJgepgMu8H1BbaPrbj5TpuGPkx5jMy5\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: unlicensed\r\npragma solidity ^0.7.3;\r\n\r\ninterface IOracle {\r\n    function getData(bytes32 key)\r\n        external\r\n        view\r\n        returns (\r\n            bool result,\r\n            uint256 date,\r\n            uint256 payload\r\n        );\r\n}\r\n",
+  "sourcePath": "D:\\Github\\oracle-system\\contracts\\IOracle.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IOracle.sol",
+    "exportedSymbols": {
+      "IOracle": [
+        72
+      ]
+    },
+    "id": 73,
+    "license": "unlicensed",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 60,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 72,
+        "linearizedBaseContracts": [
+          72
+        ],
+        "name": "IOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "54f6127f",
+            "id": 71,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getData",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "mutability": "mutable",
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "109:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "108:13:1"
+            },
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "186:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "186:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 67,
+                  "mutability": "mutable",
+                  "name": "date",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "212:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 66,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 69,
+                  "mutability": "mutable",
+                  "name": "payload",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 71,
+                  "src": "239:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "239:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "171:94:1"
+            },
+            "scope": 72,
+            "src": "92:174:1",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 73,
+        "src": "67:202:1"
+      }
+    ],
+    "src": "40:231:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IOracle.sol",
+      "exportedSymbols": {
+        "IOracle": [
+          72
+        ]
+      },
+      "license": "unlicensed"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 60,
+        "name": "PragmaDirective",
+        "src": "40:23:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            72
+          ],
+          "name": "IOracle",
+          "scope": 73
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "54f6127f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getData",
+              "scope": 72,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "key",
+                      "scope": 71,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 61,
+                        "name": "ElementaryTypeName",
+                        "src": "109:7:1"
+                      }
+                    ],
+                    "id": 62,
+                    "name": "VariableDeclaration",
+                    "src": "109:11:1"
+                  }
+                ],
+                "id": 63,
+                "name": "ParameterList",
+                "src": "108:13:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "result",
+                      "scope": 71,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 64,
+                        "name": "ElementaryTypeName",
+                        "src": "186:4:1"
+                      }
+                    ],
+                    "id": 65,
+                    "name": "VariableDeclaration",
+                    "src": "186:11:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "date",
+                      "scope": 71,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 66,
+                        "name": "ElementaryTypeName",
+                        "src": "212:7:1"
+                      }
+                    ],
+                    "id": 67,
+                    "name": "VariableDeclaration",
+                    "src": "212:12:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "payload",
+                      "scope": 71,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 68,
+                        "name": "ElementaryTypeName",
+                        "src": "239:7:1"
+                      }
+                    ],
+                    "id": 69,
+                    "name": "VariableDeclaration",
+                    "src": "239:15:1"
+                  }
+                ],
+                "id": 70,
+                "name": "ParameterList",
+                "src": "171:94:1"
+              }
+            ],
+            "id": 71,
+            "name": "FunctionDefinition",
+            "src": "92:174:1"
+          }
+        ],
+        "id": 72,
+        "name": "ContractDefinition",
+        "src": "67:202:1"
+      }
+    ],
+    "id": 73,
+    "name": "SourceUnit",
+    "src": "40:231:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-01-26T10:19:50.664Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
